@@ -1,0 +1,55 @@
+.present-container {
+  display: grid;
+  position: relative;
+  z-index: 2;
+  grid-template-rows: 10% 1fr 30px 1fr;
+  grid-template-columns: 1fr 1fr 30px 1fr 1fr;
+  width: $main-with;
+  height: $main-with;
+  transform-origin: center bottom;
+  transition: .5s;
+  animation-name: jump;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-delay: 3s;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  .wrapper {
+    grid-row: 2 / span 3;
+    grid-column: 1 / -1;
+    background-color: $color-2;
+    border-radius: 50px;
+  }
+  .vertical {
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 3;
+    background-color: $color-1;
+  }
+  .horizontal {
+    grid-column: 1 / span 5;
+    grid-row: 3 / span 1;
+    background-color: $color-1;
+  }
+  .mono1 {
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 1;
+    background-color: $color-1;
+    border-radius: 50%;
+    transform: rotate(30deg);
+    z-index: -1;
+  }
+  .mono2 {
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 1;
+    background-color: $color-1;
+    border-radius: 50%;
+    transform: rotate(330deg);
+    z-index: -1;
+  }
+}
+.hide-present {
+  opacity: 0;
+}

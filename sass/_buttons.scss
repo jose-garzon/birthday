@@ -1,0 +1,16 @@
+.button {
+  display: none;
+  text-decoration: none;
+  margin-top: 2rem;
+  padding: 1rem 7rem;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  transition: 2s;
+  background: $gradient-1;
+  border-radius: 20px;
+  opacity: 0;
+  &:hover {
+    transform: scale(.9);
+  }
+}

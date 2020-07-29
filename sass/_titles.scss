@@ -1,0 +1,25 @@
+.main-title {
+  margin-bottom: 2em;
+  text-align: center;
+}
+.main-paragraph {
+  margin-bottom: 4em;
+  text-align: center;
+}
+.corea {
+  display: none;
+  transition: 2s;
+  background: $gradient-1;
+  font-size: 3em;
+  color: transparent;
+  -webkit-background-clip: text;
+  opacity: 0;
+}
+.show-item {
+  display: block;
+  opacity: 1;
+}
+.index-container p {
+  text-align: center;
+  margin-bottom: 1em;
+}
